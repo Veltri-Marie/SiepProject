@@ -1,0 +1,3 @@
+GET http://localhost:5213/api/jobmodel/2
+###
+POST http://localhost:5213/api/jobmodel
