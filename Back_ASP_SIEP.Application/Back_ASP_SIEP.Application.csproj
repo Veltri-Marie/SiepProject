@@ -2,10 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Back_ASP_SIEP.Domain\Back_ASP_SIEP.Domain.csproj" />
+    <ProjectReference Include="..\Back_ASP_SIEP.Infrastructure\Back_ASP_SIEP.Infrastructure.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
