@@ -25,7 +25,9 @@ namespace Repositories.Job
                             {jobName}
 
                             Cherche les informations requises pour ce métier et remplis la fiche avec les informations.
-                            Inclus le minimum de mots pour la description.";
+                            Inclus le minimum de mots pour la description.
+                            
+                            Ensuite pour le savoir faire (Know How), tu dois inclure au moins 3 savoirs faire sous forme de petites phrases (5/§ mots par savoir faire)";
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
                 //#TODO: Verify result before trying to convert it to JSON
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);

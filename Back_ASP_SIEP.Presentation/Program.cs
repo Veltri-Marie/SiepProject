@@ -11,7 +11,7 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 //#TODO: Configure the policy properly
 //#TODO: put Services configuration in a separate extension class
 builder.Services.AddCors(options => {
-    options.AddPolicy("AllowAllOrigins", builder =>
+    options.AddPolicy("Dev", builder =>
             {
                 builder.AllowAnyOrigin()
                        .AllowAnyMethod()
@@ -31,7 +31,7 @@ builder.Services.AddSingleton<Kernel>(kernel);
 
 IFileHelper fileHelper = new FileHelper();
 builder.Services.AddSingleton<IFileHelper>(fileHelper);
-
 WebApplication app = builder.Build();
 app.MapControllers();
+app.UseCors("Dev");
 app.Run();

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\MaximilienMontier\\.nuget\\packages\\": {}
+    "C:\\Users\\NathanVanQuaquebeke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj",
       "projectName": "Back_ASP_SIEP.Domain",
-      "projectPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj",
-      "packagesPath": "C:\\Users\\MaximilienMontier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\Back_ASP_SIEP.Domain\\obj\\",
+      "projectPath": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj",
+      "packagesPath": "C:\\Users\\NathanVanQuaquebeke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\Back_ASP_SIEP.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MaximilienMontier\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\NathanVanQuaquebeke\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

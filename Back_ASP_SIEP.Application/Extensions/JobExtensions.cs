@@ -10,7 +10,8 @@ namespace Extensions.Job
             return new JobSheetResponse
             (
                 jobName.Name,
-                jobName.Description
+                jobName.Description,
+                jobName.KnowHow
             );
         }
     }

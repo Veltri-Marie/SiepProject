@@ -1,4 +1,5 @@
 {
     "Name": "x",
-    "Description": "x"
+    "Description": "x",
+    "KnowHow" : "x"
 }
