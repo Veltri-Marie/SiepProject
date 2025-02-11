@@ -19,7 +19,6 @@ namespace Repositories.Job
                             {structure}
                             Le valeur du champs ""id"" doit être 1.
                             Tu ne dois inclure qu'une seule structure remplie dans ta réponse.
-                            Tu ne peux modifier que le contenu des champs ou la valeur est 'x'.
 
                             Voici le métier que tu dois utiliser :
                             {jobName}
@@ -29,11 +28,9 @@ namespace Repositories.Job
 
                             Donne 2 ou 3 synonymes pour le métier.
                             
-                            Ensuite pour le savoir faire (Know How), tu dois inclure au moins 3 savoirs faire sous forme de petites phrases (5/6 mots par savoir faire)";
+                            Pour le champs ""KnowHows"", tu dois inclure 3 savoirs faire sous forme de petites phrases (5/6 mots par savoir faire)";
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
-                //#TODO: Verify result before trying to convert it to JSON
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
-
                 return result.ToString();
             }
             catch(Exception ex)
