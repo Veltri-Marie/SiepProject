@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Mvc;
-using Dtos.Job.Response;
-using Interfaces.UseCases.Job;
-using Exceptions.Job;
 using Dtos.Error.Response;
+using Dtos.Job.Response;
+using Exceptions.Job;
+using Interfaces.UseCases.Job;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ApiControllers.AI
 {
@@ -20,7 +20,7 @@ namespace ApiControllers.AI
                 JobSheetResponse response = await _useCase.Execute(jobName);
                 return Ok(response);
             }
-            catch(JobSheetException ex)
+            catch (JobSheetException ex)
             {
                 return BadRequest(new ErrorResponse(
                     Message: ex.Message,
@@ -28,7 +28,7 @@ namespace ApiControllers.AI
                     Details: ex.InnerException?.Message
                 ));
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return StatusCode(500, new ErrorResponse(
                     Message: "An unexpected error occurred.",

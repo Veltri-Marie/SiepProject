@@ -12,7 +12,8 @@ namespace Extensions.ServiceCollection
     {
         public static void ConfigureServices(this IServiceCollection services)
         {
-            services.AddCors(options => {
+            services.AddCors(options =>
+            {
                 options.AddPolicy("Dev", builder =>
             {
                 builder.WithOrigins("http://localhost:5173")
@@ -25,12 +26,13 @@ namespace Extensions.ServiceCollection
             services.AddScoped<IJobSheetRepository, JobSheetRepository>();
             services.AddScoped<IGetJobSheetUseCase, GetJobSheetUseCase>();
             services.AddOllamaChatCompletion("mistral", new Uri("http://localhost:11434"));
-            services.AddSingleton<KernelPluginCollection>((serviceProvider) => 
+            services.AddSingleton<KernelPluginCollection>((serviceProvider) =>
                 [
                     //KernelPluginFactory.CreateFromObject(serviceProvider.GetRequiredService<TestPlugin>())
                 ]
             );
-            services.AddTransient((serviceProvider) => {
+            services.AddTransient((serviceProvider) =>
+            {
                 KernelPluginCollection pluginCollection = serviceProvider.GetRequiredService<KernelPluginCollection>();
                 return new Kernel(serviceProvider, pluginCollection);
             });

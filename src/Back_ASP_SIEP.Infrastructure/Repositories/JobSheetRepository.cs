@@ -33,7 +33,7 @@ namespace Repositories.Job
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
                 return result.ToString();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
