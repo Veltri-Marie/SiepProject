@@ -14,9 +14,9 @@ namespace Extensions.ServiceCollection
         {
             //#TODO: Configure cors policy properly
             services.AddCors(options => {
-                options.AddPolicy("AllowAllOrigins", builder =>
+                options.AddPolicy("Dev", builder =>
             {
-                builder.AllowAnyOrigin()
+                builder.WithOrigins("http://localhost:5173")
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             });

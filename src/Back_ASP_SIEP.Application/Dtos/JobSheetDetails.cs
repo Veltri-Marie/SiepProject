@@ -10,8 +10,6 @@ namespace Dtos.Job.Details
         string Statut,
         string Name,
         string Description, 
-        string[] KnowHow,
-        DateTime Date
-        
+        string[] KnowHow
     );
 }

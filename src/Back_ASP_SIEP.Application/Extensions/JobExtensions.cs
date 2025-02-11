@@ -17,9 +17,8 @@ namespace Extensions.Job
                 jobName.Statut,
                 jobName.Name,
                 jobName.Description,
-                jobName.KnowHow, 
-                jobName.Date
-                
+                jobName.KnowHow,
+                DateTime.Now
             );
         }
     }

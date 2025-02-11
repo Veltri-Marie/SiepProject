@@ -1395,11 +1395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
+      "projectUniqueName": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
       "projectName": "Back_ASP_SIEP.Application",
-      "projectPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
+      "projectPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
       "packagesPath": "C:\\Users\\MaximilienMontier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Application\\obj\\",
+      "outputPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\MaximilienMontier\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1414,11 +1414,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj": {
-              "projectPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj"
+            "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj": {
+              "projectPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Domain\\Back_ASP_SIEP.Domain.csproj"
             },
-            "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Infrastructure\\Back_ASP_SIEP.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Infrastructure\\Back_ASP_SIEP.Infrastructure.csproj"
+            "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Infrastructure\\Back_ASP_SIEP.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Infrastructure\\Back_ASP_SIEP.Infrastructure.csproj"
             }
           }
         }

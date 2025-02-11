@@ -7,6 +7,5 @@
     "Statut" : "x",
     "Name": "x",
     "Description": "x",
-    "KnowHow" : "x", 
-    "date": "x"
+    "KnowHow" : "x"
 }
