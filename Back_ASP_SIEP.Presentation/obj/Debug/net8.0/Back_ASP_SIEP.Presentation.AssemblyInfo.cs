@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Back_ASP_SIEP.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8972896d33116eae37fc317c889bb2c87f97a5b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f62a17e3a6a02f2edc346caa0db98d9c0d5a6b26")]
 [assembly: System.Reflection.AssemblyProductAttribute("Back_ASP_SIEP.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Back_ASP_SIEP.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
