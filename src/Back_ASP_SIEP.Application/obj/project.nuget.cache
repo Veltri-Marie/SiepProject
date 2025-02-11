@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7VjHzPa10K8=",
+  "dgSpecHash": "IhUEOK+Mvk0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
+  "projectFilePath": "C:\\Users\\MaximilienMontier\\Desktop\\Work\\C#\\.NET ASP\\Back_ASP_SIEP.CleanArchitecture\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MaximilienMontier\\.nuget\\packages\\azure.ai.openai\\2.1.0-beta.2\\azure.ai.openai.2.1.0-beta.2.nupkg.sha512",
     "C:\\Users\\MaximilienMontier\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
