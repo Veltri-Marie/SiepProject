@@ -29,8 +29,6 @@ namespace Repositories.Job
 
                             Cherche les informations requises pour ce métier et remplis la fiche avec les informations.
                             Inclus le minimum de mots pour la description.
-
-                            Donne 2 ou 3 synonymes pour le métier.
                             
                             Pour le champs ""KnowHows"", tu dois inclure 3 savoirs faire sous forme de petites phrases (5/6 mots par savoir faire)";
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
@@ -41,6 +39,29 @@ namespace Repositories.Job
             {
                 throw;
             }
+        }
+
+       public async Task<string> VerifyResult(string result)
+        {
+            try
+            {
+                string structure = _fileHelper.GetFileContent("Back_ASP_SIEP.Infrastructure\\Templates\\jobSheetTemplate.txt");
+                string prompt = @$"Verifie que {result} sois bien sous format JSON. Corrige les erreurs.
+                            Par exemple des lettres qui se seraient rajoutées. Ou des phrases en trop a la fin du JSON.
+                            Si tout te semble correct, renvoie juste la reponse comme elle était au depart. N'oublie pas que 
+                            la structure a respecté est la suivante : {structure} 
+                            Tu ne dois inclure que la structure dans ta réponse.";
+                FunctionResult finalResult = await _kernel.InvokePromptAsync(prompt);
+                
+                Console.WriteLine(finalResult);
+
+                return finalResult.ToString();
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }
     }
 }
