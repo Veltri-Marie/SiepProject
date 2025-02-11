@@ -4,6 +4,7 @@ using Interfaces.UseCases.Job;
 using InterfaceS.Helpers.File;
 using Microsoft.SemanticKernel;
 using Repositories.Job;
+using Repositories.Json;
 using UseCases.Job;
 
 namespace Extensions.ServiceCollection
@@ -29,6 +30,7 @@ namespace Extensions.ServiceCollection
 
             // Registers the repository and use case for job sheets
             services.AddScoped<IJobSheetRepository, JobSheetRepository>();
+            services.AddScoped<IJsonValidationRepository, JsonValidationRepository>();
             services.AddScoped<IGetJobSheetUseCase, GetJobSheetUseCase>();
 
             // Configures AI model connection

@@ -11,9 +11,11 @@ using Microsoft.Extensions.Logging;
 namespace UseCases.Job
 {
     /// <summary> Use case for retrieving job sheet details based on the job name. </summary>
-    public class GetJobSheetUseCase(IJobSheetRepository repository, ILogger<GetJobSheetUseCase> logger) : IGetJobSheetUseCase
+    public class GetJobSheetUseCase(IJobSheetRepository jobSheetRepository,
+     IJsonValidationRepository jsonValidationRepository, ILogger<GetJobSheetUseCase> logger) : IGetJobSheetUseCase
     {
-        private readonly IJobSheetRepository _repository = repository;
+        private readonly IJobSheetRepository _jobSheetRepository = jobSheetRepository;
+        private readonly IJsonValidationRepository _jsonValidationRepository = jsonValidationRepository;
         private readonly ILogger<GetJobSheetUseCase> _logger = logger;
 
         /// <summary> Executes the use case to retrieve a job sheet based on the job name.</summary>
@@ -23,8 +25,8 @@ namespace UseCases.Job
         {
             try
             {
-                string jsonFormatedString = await _repository.GetFormatedSheetAsync(jobName);
-                string verifiedjsonFormatedString = await _repository.VerifyResult(jsonFormatedString);
+                string jsonFormatedString = await _jobSheetRepository.GetFormatedSheetAsync(jobName);
+                string verifiedjsonFormatedString = await _jsonValidationRepository.VerifyResultAsync(jsonFormatedString);
                 IJobSheet jobSheet = JsonHelper.DeserializeFromString<JobSheet>(verifiedjsonFormatedString);
                 return ((JobSheet)jobSheet).ToJobSheetResponse();
             }
