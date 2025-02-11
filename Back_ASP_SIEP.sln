@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Application", "src/Back_ASP_SIEP.Application\Back_ASP_SIEP.Application.csproj", "{A6C3E7B6-EDFE-4F7D-94E5-E3181A5D6552}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Application", "Back_ASP_SIEP.Application\Back_ASP_SIEP.Application.csproj", "{A6C3E7B6-EDFE-4F7D-94E5-E3181A5D6552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Domain", "src/Back_ASP_SIEP.Domain\Back_ASP_SIEP.Domain.csproj", "{13493460-D2C3-408E-B54A-2FF0429ABB32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Domain", "Back_ASP_SIEP.Domain\Back_ASP_SIEP.Domain.csproj", "{13493460-D2C3-408E-B54A-2FF0429ABB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Infrastructure", "src/Back_ASP_SIEP.Infrastructure\Back_ASP_SIEP.Infrastructure.csproj", "{F2607003-053C-499B-8AE8-F414AEABAE62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Infrastructure", "Back_ASP_SIEP.Infrastructure\Back_ASP_SIEP.Infrastructure.csproj", "{F2607003-053C-499B-8AE8-F414AEABAE62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Presentation", "src/Back_ASP_SIEP.Presentation\Back_ASP_SIEP.Presentation.csproj", "{AD2B632B-CCFB-4758-9E0C-51C938D07029}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Back_ASP_SIEP.Presentation", "Back_ASP_SIEP.Presentation\Back_ASP_SIEP.Presentation.csproj", "{AD2B632B-CCFB-4758-9E0C-51C938D07029}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,9 +36,5 @@ Global
 		{AD2B632B-CCFB-4758-9E0C-51C938D07029}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD2B632B-CCFB-4758-9E0C-51C938D07029}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD2B632B-CCFB-4758-9E0C-51C938D07029}.Release|Any CPU.Build.0 = Release|Any CPU
-		{328145DA-8482-460C-BC37-A27D4F4A6FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{328145DA-8482-460C-BC37-A27D4F4A6FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{328145DA-8482-460C-BC37-A27D4F4A6FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{328145DA-8482-460C-BC37-A27D4F4A6FF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
