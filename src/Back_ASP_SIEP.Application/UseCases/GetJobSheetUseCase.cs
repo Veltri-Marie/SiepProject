@@ -19,7 +19,8 @@ namespace UseCases.Job
             try
             {
                 string jsonFormatedString = await _repository.GetFormatedSheetAsync(jobName);
-                JobSheetDetails jobSheetDetails = JsonSerializer.Deserialize<JobSheetDetails>(jsonFormatedString)
+                string verifiedjsonFormatedString = await _repository.VerifyResult(jsonFormatedString);
+                JobSheetDetails jobSheetDetails = JsonSerializer.Deserialize<JobSheetDetails>(verifiedjsonFormatedString)
                     ?? throw new JsonException("The JSON Deserialization returned null");
                 return jobSheetDetails.ToJobSheetResponse();
             }

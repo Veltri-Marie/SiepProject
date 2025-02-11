@@ -1408,19 +1408,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MaximilienMontier\\.nuget\\packages\\": {}
+    "C:\\Users\\NathanVanQuaquebeke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\Back_ASP_SIEP.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\Back_ASP_SIEP.Presentation.csproj",
       "projectName": "Back_ASP_SIEP.Presentation",
-      "projectPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\Back_ASP_SIEP.Presentation.csproj",
-      "packagesPath": "C:\\Users\\MaximilienMontier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\Back_ASP_SIEP.Presentation.csproj",
+      "packagesPath": "C:\\Users\\NathanVanQuaquebeke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\src\\Back_ASP_SIEP.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MaximilienMontier\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\NathanVanQuaquebeke\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1432,8 +1432,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj": {
-              "projectPath": "C:\\Users\\MaximilienMontier\\Documents\\GitHub\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj"
+            "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj": {
+              "projectPath": "C:\\Users\\NathanVanQuaquebeke\\Documents\\BackEndAsp\\SiepProject\\src\\Back_ASP_SIEP.Application\\Back_ASP_SIEP.Application.csproj"
             }
           }
         }
