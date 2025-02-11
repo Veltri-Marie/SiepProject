@@ -1,1 +1,8 @@
-http://localhost:5217/api/aimodel/plombier
+GET http://localhost:5217/api/aimodel/plombier
+###
+POST http://localhost:5217/api/aimodel/plombier
+Content-Type: application/json
+
+{
+    "text": "J'ai un problème de plomberie"
+}
