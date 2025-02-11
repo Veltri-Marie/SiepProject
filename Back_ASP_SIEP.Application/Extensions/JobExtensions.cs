@@ -9,17 +9,9 @@ namespace Extensions.Job
         {
             return new JobSheetResponse
             (
-                jobName.Id,
-                jobName.isActive,
-                jobName.isIntro,
-                jobName.isRegulated,
-                jobName.isPriority,
-                jobName.Statut,
                 jobName.Name,
                 jobName.Description,
-                jobName.KnowHow, 
-                jobName.Date
-                
+                jobName.KnowHow
             );
         }
     }

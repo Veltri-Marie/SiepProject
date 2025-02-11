@@ -1,12 +1,5 @@
 {
-    "Id" : x,
-    "isActive" : x,
-    "isIntro": x
-    "isRegulated" : x,
-    "isPriority" : x,
-    "Statut" : "x",
     "Name": "x",
     "Description": "x",
-    "KnowHow" : "x", 
-    "date": "x"
+    "KnowHow" : "x"
 }

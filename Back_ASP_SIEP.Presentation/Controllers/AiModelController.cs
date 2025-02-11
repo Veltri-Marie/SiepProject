@@ -35,7 +35,6 @@ namespace ApiControllers.AI
                     ErrorCode: "001",
                     Details: ex.Message
                 ));
-
             }
         }
     }
