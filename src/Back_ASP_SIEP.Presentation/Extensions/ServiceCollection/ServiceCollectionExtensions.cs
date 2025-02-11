@@ -12,7 +12,6 @@ namespace Extensions.ServiceCollection
     {
         public static void ConfigureServices(this IServiceCollection services)
         {
-            //#TODO: Configure cors policy properly
             services.AddCors(options => {
                 options.AddPolicy("Dev", builder =>
             {
