@@ -24,8 +24,8 @@ namespace UseCases.Job
             try
             {
                 string jsonFormatedString = await _repository.GetFormatedSheetAsync(jobName);
-                IJobSheet jobSheet = JsonHelper.DeserializeFromString<JobSheet>(verifiedjsonFormatedString);
                 string verifiedjsonFormatedString = await _repository.VerifyResult(jsonFormatedString);
+                IJobSheet jobSheet = JsonHelper.DeserializeFromString<JobSheet>(verifiedjsonFormatedString);
                 return ((JobSheet)jobSheet).ToJobSheetResponse();
             }
             catch (Exception ex)
