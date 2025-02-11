@@ -2,15 +2,14 @@ using System.Text.Json;
 
 namespace Helpers.Json
 {
+    /// <summary> Provides helper methods for JSON manipulation. </summary>
     public class JsonHelper
     {
-        /// <summary>
-        /// Extrait une structure JSON d'une chaîne de caractères et la désérialise en un objet de type T.
-        /// </summary>
-        /// <typeparam name="T">Le type de l'objet à désérialiser.</typeparam>
-        /// <param name="jsonFormattedString">La chaîne de caractères contenant la structure JSON.</param>
-        /// <returns>L'objet désérialisé de type T.</returns>
-        public static T ExtractFromJson<T>(string jsonFormattedString)
+        /// <summary> Extracts a JSON structure from a string and deserializes it into an object of type T. </summary>
+        /// <returns> The deserialized object of type T. </returns>
+        /// <exception cref="ArgumentException"> Thrown if the input string does not contain a valid JSON structure. </exception>
+        /// <exception cref="JsonException"> Thrown if the JSON deserialization returns null. </exception>
+        public static T DeserializeFromString<T>(string jsonFormattedString)
         {
             int startIndex = jsonFormattedString.IndexOf('{');
             int endIndex = jsonFormattedString.LastIndexOf('}');
@@ -20,8 +19,7 @@ namespace Helpers.Json
             }
             string jsonString = jsonFormattedString.Substring(startIndex, endIndex - startIndex + 1);
             Console.WriteLine("SUBBED STRING: " + jsonString);
-            return JsonSerializer.Deserialize<T>(jsonString)
-                ?? throw new JsonException("The JSON Deserialization returned null");
+            return JsonSerializer.Deserialize<T>(jsonString) ?? throw new JsonException("The JSON Deserialization returned null");
         }
     }
 }

@@ -4,11 +4,15 @@ using Microsoft.SemanticKernel;
 
 namespace Repositories.Job
 {
+    /// <summary> Repository for retrieving and formatting job sheet data. </summary>
     public class JobSheetRepository(Kernel kernel, IFileHelper fileHelper) : IJobSheetRepository
     {
         private readonly Kernel _kernel = kernel;
         private readonly IFileHelper _fileHelper = fileHelper;
 
+        /// <summary> Retrieves a formatted job sheet asynchronously based on the specified job name. </summary>
+        /// <returns> A formatted job sheet as a string containing at least a json structure. </returns>
+        /// <exception cref="Exception"> Thrown if an error occurs during the job sheet retrieval process. </exception>
         public async Task<string> GetFormatedSheetAsync(string jobName)
         {
             try
@@ -33,9 +37,9 @@ namespace Repositories.Job
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
                 return result.ToString();
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new Exception(ex.Message);
+                throw;
             }
         }
     }

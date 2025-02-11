@@ -10,17 +10,21 @@ using Microsoft.Extensions.Logging;
 
 namespace UseCases.Job
 {
+    /// <summary> Use case for retrieving job sheet details based on the job name. </summary>
     public class GetJobSheetUseCase(IJobSheetRepository repository, ILogger<GetJobSheetUseCase> logger) : IGetJobSheetUseCase
     {
         private readonly IJobSheetRepository _repository = repository;
         private readonly ILogger<GetJobSheetUseCase> _logger = logger;
 
+        /// <summary> Executes the use case to retrieve a job sheet based on the job name.</summary>
+        /// <returns>A <see cref="JobSheetResponse"/> containing the job sheet details.</returns>
+        /// <exception cref="JobSheetException">Thrown when an error occurs while retrieving the job sheet.</exception>
         public async Task<JobSheetResponse> Execute(string jobName)
         {
             try
             {
                 string jsonFormatedString = await _repository.GetFormatedSheetAsync(jobName);
-                IJobSheet jobSheet = JsonHelper.ExtractFromJson<JobSheet>(jsonFormatedString);
+                IJobSheet jobSheet = JsonHelper.DeserializeFromString<JobSheet>(jsonFormatedString);
                 return ((JobSheet)jobSheet).ToJobSheetResponse();
             }
             catch (Exception ex)
