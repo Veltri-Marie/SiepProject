@@ -22,15 +22,14 @@ namespace Repositories.Job
                 string prompt = @$"Voici la structure que tu dois strictement respecter, en format JSON :
                             {structure}
                             Le valeur du champs ""id"" doit être 1.
+                            La valeur du champrs ""KnowHows"" doit être un tableau de string contenant 3 savoirs faire requis pour exercer le métier.
                             Tu ne dois inclure qu'une seule structure remplie dans ta réponse.
 
                             Voici le métier que tu dois utiliser :
                             {jobName}
 
                             Cherche les informations requises pour ce métier et remplis la fiche avec les informations.
-                            Inclus le minimum de mots pour la description.
-                            
-                            Pour le champs ""KnowHows"", tu dois inclure 3 savoirs faire sous forme de petites phrases (5/6 mots par savoir faire)";
+                            Inclus le minimum de mots pour la description.";
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
                 return result.ToString();

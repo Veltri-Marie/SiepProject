@@ -18,11 +18,10 @@ namespace Repositories.Json
             try
             {
                 string structure = _fileHelper.GetFileContent("Back_ASP_SIEP.Infrastructure\\Templates\\jobSheetTemplate.txt");
-                string prompt = @$"Verifie que {result} sois bien sous format JSON. Corrige les erreurs.
-                            Par exemple des lettres qui se seraient rajoutées. Ou des phrases en trop a la fin du JSON.
-                            Si tout te semble correct, renvoie juste la reponse comme elle était au depart. N'oublie pas que 
-                            la structure a respecté est la suivante : {structure} 
-                            Tu ne dois inclure que la structure dans ta réponse.";
+                string prompt = @$"Tu ne dois rien répondre d'autre qu'une structure JSON.
+                            Vérifie que {result} soit une structure qui respecte un format JSON correct.
+                            Si il y a des caractères en dehors des champs ou valeurs, supprime les.
+                            Renvoie ensuite le résultat corrigé.";
                 FunctionResult finalResult = await _kernel.InvokePromptAsync(prompt);
                 return finalResult.ToString();
             }
