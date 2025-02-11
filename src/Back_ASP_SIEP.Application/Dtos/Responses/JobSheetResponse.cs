@@ -9,7 +9,7 @@ namespace Dtos.Job.Response
         bool isPriority,
         string Statut,
         string Name,
-        string Description, 
+        string Description,
         string[] KnowHow,
         DateTime Date
     );

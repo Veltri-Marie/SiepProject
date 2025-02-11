@@ -1,12 +1,12 @@
-using System.Text.Json;
 using Dtos.Job.Response;
+using Entities.Job;
+using Exceptions.Job;
 using Extensions.Entities.Job;
+using Helpers.Json;
+using Interfaces.Entities.Job;
 using Interfaces.Repositories;
 using Interfaces.UseCases.Job;
 using Microsoft.Extensions.Logging;
-using Exceptions.Job;
-using Interfaces.Entities.Job;
-using Entities.Job;
 
 namespace UseCases.Job
 {
@@ -20,11 +20,10 @@ namespace UseCases.Job
             try
             {
                 string jsonFormatedString = await _repository.GetFormatedSheetAsync(jobName);
-                IJobSheet jobSheet = JsonSerializer.Deserialize<JobSheet>(jsonFormatedString)
-                    ?? throw new JsonException("The JSON Deserialization returned null");
+                IJobSheet jobSheet = JsonHelper.ExtractFromJson<JobSheet>(jsonFormatedString);
                 return ((JobSheet)jobSheet).ToJobSheetResponse();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "GetJobSheetUseCase.Execute: Error while getting job sheet details");
                 throw new JobSheetException("An error occured while getting the job sheet", ex);

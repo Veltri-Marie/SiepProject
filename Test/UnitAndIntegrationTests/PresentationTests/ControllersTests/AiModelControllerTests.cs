@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Moq;
-using Xunit;
 using ApiControllers.AI;
 using Dtos.Job.Response;
 using Interfaces.UseCases.Job;
+using Microsoft.AspNetCore.Mvc;
+using Moq;
+using Xunit;
 
 namespace UnitAndIntegrationTests.PresentationTests.ControllersTests
 {

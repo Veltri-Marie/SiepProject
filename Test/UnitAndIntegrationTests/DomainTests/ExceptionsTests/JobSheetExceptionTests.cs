@@ -1,7 +1,7 @@
 // filepath: /c:/_Code/SiepProject-dev/src/Back_ASP_SIEP.Domain/Exceptions/JobSheetExceptionTest.cs
 using System;
-using Xunit;
 using Exceptions.Job;
+using Xunit;
 
 namespace ack_ASP_SIEP.Tests.DomainTests.EntitiesTests
 {
