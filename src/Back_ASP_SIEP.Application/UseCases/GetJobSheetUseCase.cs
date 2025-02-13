@@ -25,7 +25,6 @@ namespace UseCases.Job
         {
             try
             {
-                //#TODO: Re-activate de second agent
                 string jsonFormatedString = await _jobSheetRepository.GetFormatedSheetAsync(jobName);
                 //string verifiedjsonFormatedString = await _jsonValidationRepository.VerifyResultAsync(jsonFormatedString);
                 IJobSheet jobSheet = JsonHelper.DeserializeFromString<JobSheet>(jsonFormatedString);

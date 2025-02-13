@@ -21,8 +21,7 @@ namespace Repositories.Job
                 string structure = _fileHelper.GetFileContent("Back_ASP_SIEP.Infrastructure\\Templates\\jobSheetTemplate.txt");
                 string prompt = @$"Respecte strictement la structure suivante en format JSON :
                 {structure}
-                
-                - Tu dois toujours répondre en français.
+
                 - Remplis uniquement les champs suivants :
                 - ""Name"" : Nom du métier.
                 - ""Excerpt"" : Une courte introduction sur le métier.
@@ -39,7 +38,7 @@ namespace Repositories.Job
                 Voici le métier que tu dois utiliser :
                 {jobName}
 
-                Recherche les informations nécessaires pour ce métier et remplis la fiche en français en utilisant des informations précises et synthétiques.";
+                Recherche les informations nécessaires pour ce métier et remplis la fiche en utilisant des informations précises et synthétiques.";
 
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
