@@ -4,6 +4,11 @@
     <ProjectReference Include="..\Back_ASP_SIEP.Application\Back_ASP_SIEP.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Fleck" Version="1.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.3.0" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>

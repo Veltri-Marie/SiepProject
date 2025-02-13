@@ -328,3 +328,6 @@ C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\refint\
 C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\Back_ASP_SIEP.Presentation.pdb
 C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\Back_ASP_SIEP.Presentation.genruntimeconfig.cache
 C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\ref\Back_ASP_SIEP.Presentation.dll
+C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Fleck.dll
+C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
