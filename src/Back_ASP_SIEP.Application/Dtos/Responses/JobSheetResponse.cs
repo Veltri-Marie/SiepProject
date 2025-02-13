@@ -4,15 +4,33 @@ namespace Dtos.Job.Response
     public record JobSheetResponse
     (
         int Id,
-        bool isActive,
-        bool isIntro,
-        bool isRegulated,
-        bool isPriority,
+        bool IsActive,
+        bool IsIntro,
+        bool IsRegulated,
+        bool IsPriority,
         string Statut,
+        DateTime LastUpdated,
         string Name,
+        string Excerpt,
+        string[] Tags,
+        int? ParentJobId,
+        string LanguageLink,
         string Description,
-        string[] KnowHow,
-        DateTime Date
+        string[] KnowHows,
+        string[] SoftSkills,
+        string RequiredTitle,
+        DateTime? RequiredTitleLastUpdated,
+        string ProfessionalFramework,
+        string[] Synonyms,
+        int[] RelatedJobsIds,
+        int[] RelatedSectorsIds,
+        int[] RelatedInterviewsIds,
+        int[] RelatedFederationsIds,
+        int[] RelatedNewsIds,
+        int[] RelatedPublicationsIds,
+        int[] AuthorsIds,
+        bool IsShortageJob
     );
+
 }
 

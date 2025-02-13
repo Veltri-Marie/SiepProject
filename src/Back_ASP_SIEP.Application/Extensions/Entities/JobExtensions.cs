@@ -18,10 +18,27 @@ namespace Extensions.Entities.Job
                 jobSheet.IsRegulated,
                 jobSheet.IsPriority,
                 jobSheet.Statut,
+                jobSheet.LastUpdated,
                 jobSheet.Name,
+                jobSheet.Excerpt,
+                jobSheet.Tags,
+                jobSheet.ParentJobId,
+                jobSheet.LanguageLink,
                 jobSheet.Description,
                 jobSheet.KnowHows,
-                DateTime.Now
+                jobSheet.SoftSkills,
+                jobSheet.RequiredTitle,
+                jobSheet.RequiredTitleLastUpdated,
+                jobSheet.ProfessionalFramework,
+                jobSheet.Synonyms,
+                jobSheet.RelatedJobsIds,
+                jobSheet.RelatedSectorsIds,
+                jobSheet.RelatedInterviewsIds,
+                jobSheet.RelatedFederationsIds,
+                jobSheet.RelatedNewsIds,
+                jobSheet.RelatedPublicationsIds,
+                jobSheet.AuthorsIds,
+                jobSheet.IsShortageJob
             );
         }
     }

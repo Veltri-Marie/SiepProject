@@ -19,17 +19,27 @@ namespace Repositories.Job
             {
                 //#TODO: Get path dynamically
                 string structure = _fileHelper.GetFileContent("Back_ASP_SIEP.Infrastructure\\Templates\\jobSheetTemplate.txt");
-                string prompt = @$"Voici la structure que tu dois strictement respecter, en format JSON :
-                            {structure}
-                            Le valeur du champs ""id"" doit être 1.
-                            La valeur du champrs ""KnowHows"" doit être un tableau de string contenant 3 savoirs faire requis pour exercer le métier.
-                            Tu ne dois inclure qu'une seule structure remplie dans ta réponse.
+                string prompt = @$"Respecte strictement la structure suivante en format JSON :
+                {structure}
 
-                            Voici le métier que tu dois utiliser :
-                            {jobName}
+                - Remplis uniquement les champs suivants :
+                - ""Name"" : Nom du métier.
+                - ""Excerpt"" : Une courte introduction sur le métier.
+                - ""Tags"" : Une liste de mots-clés pertinents (au moins 3).
+                - ""Description"" : Une description concise du métier avec un minimum de mots.
+                - ""KnowHows"" : Un tableau contenant exactement 3 savoir-faire requis pour exercer ce métier.
+                - ""SoftSkills"" : Un tableau contenant exactement 3 compétences comportementales (savoir-être).
+                - ""RequiredTitle"" : Le diplôme ou la qualification requise pour ce métier.
+                - ""ProfessionalFramework"" : L’environnement professionnel dans lequel ce métier s’exerce.
+                - ""Synonyms"" : Une liste d’autres appellations pour ce métier.
 
-                            Cherche les informations requises pour ce métier et remplis la fiche avec les informations.
-                            Inclus le minimum de mots pour la description.";
+                - Ne génère qu'une seule structure JSON correctement remplie.
+
+                Voici le métier que tu dois utiliser :
+                {jobName}
+
+                Recherche les informations nécessaires pour ce métier et remplis la fiche en utilisant des informations précises et synthétiques.";
+
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
                 return result.ToString();

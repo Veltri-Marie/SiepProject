@@ -19,7 +19,7 @@ namespace Extensions.ServiceCollection
             {
                 options.AddPolicy("Dev", builder =>
                 {
-                    builder.WithOrigins("http://localhost:5173")
+                    builder.AllowAnyOrigin()
                            .AllowAnyMethod()
                            .AllowAnyHeader();
                 });

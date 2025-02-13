@@ -1,11 +1,11 @@
 {
-    "Id" : x,
-    "isActive" : x,
-    "isIntro": x
-    "isRegulated" : x,
-    "isPriority" : x,
-    "Statut" : "x",
     "Name": "x",
+    "Excerpt": "x",
+    "Tags": [],
     "Description": "x",
-    "KnowHows" : "x"
+    "KnowHows": [],
+    "SoftSkills": [],
+    "RequiredTitle": "x",
+    "ProfessionalFramework": "x",
+    "Synonyms": []
 }
