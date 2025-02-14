@@ -8,8 +8,9 @@ export const Container = styled(Box)(() => ({
     backgroundColor: '#f4f4f4',
 }));
 
-export const MainContent = styled(Box)<{ component?: React.ElementType }>(({ theme }) => ({
-    padding: theme.spacing(3),
+export const MainContent = styled(Box)<{ component?: React.ElementType }>(() => ({
     paddingTop: '64px',
+    width: '100%',
+    height: '100%',
 }));
 

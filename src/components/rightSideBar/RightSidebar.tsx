@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, TextField, Typography, Paper } from "@mui/material";
-import { DtoJob } from "../../Dtos/DtoJob.ts";
+import { DtoJob } from "../../dtos/DtoJob.ts";
+import { StyledPaper, StyledTypography, StyledTextField } from "./RightSideBar.styles.ts";
 
 interface RightSidebarProps {
     setJobData: (value: DtoJob) => void;
@@ -13,56 +13,40 @@ const RightSidebar: React.FC<RightSidebarProps> = ({ jobData, setJobData }) => {
     }
 
     return (
-        <Paper
-            elevation={3}
-            sx={{
-                flex: 1,
-                padding: 3,
-                borderRadius: "8px",
-                backgroundColor: "#fff",
-                minWidth: "300px",
-                maxWidth: "400px",
-                height: "fit-content",
-                alignSelf: "flex-start",
-            }}
-        >
-            <Typography variant="h5" sx={{ mb: 2, fontWeight: "bold" }}>Fiche Métier</Typography>
+        <StyledPaper elevation={3}>
+            <StyledTypography variant="h5">Fiche Métier</StyledTypography>
 
-            <TextField
+            <StyledTextField
                 label="Nom *"
                 fullWidth
                 variant="outlined"
-                margin="normal"
                 value={jobData.name || ""}
                 onChange={(e) => setJobData({ ...jobData, name: e.target.value })}
             />
 
-            <TextField
+            <StyledTextField
                 label="Identifiant *"
                 type="number"
                 fullWidth
                 variant="outlined"
-                margin="normal"
                 value={jobData.id || ""}
                 onChange={(e) => setJobData({ ...jobData, id: Number(e.target.value) || 0 })}
             />
 
-            <TextField
+            <StyledTextField
                 label="Extrait"
                 fullWidth
                 multiline
                 rows={3}
                 variant="outlined"
-                margin="normal"
                 value={jobData.excerpt || ""}
                 onChange={(e) => setJobData({ ...jobData, excerpt: e.target.value })}
             />
 
-            <TextField
+            <StyledTextField
                 label="Tags"
                 fullWidth
                 variant="outlined"
-                margin="normal"
                 value={jobData.tags ? jobData.tags.join(", ") : ""}
                 onChange={(e) =>
                     setJobData({
@@ -71,7 +55,7 @@ const RightSidebar: React.FC<RightSidebarProps> = ({ jobData, setJobData }) => {
                     })
                 }
             />
-        </Paper>
+        </StyledPaper>
     );
 };
 

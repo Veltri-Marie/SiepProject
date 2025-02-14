@@ -1,17 +1,17 @@
 import {
     createBrowserRouter,
-    createRoutesFromElements,
+    createRoutesFromElements, Navigate,
     Route,
     RouterProvider,
 } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout.tsx";
-import PermanentDrawerLeft from "../components/Mui/PermanentDrawer.tsx";
+import GenerationPage from "../pages/GenerationPage.tsx";
 
 const router = createBrowserRouter((
     createRoutesFromElements(
-            <Route path="/" element={<MainLayout/>}>  {/* Toutes les routes enfants auront ce layout */}
-                <Route index element={<p>Empty page</p>} />  {/* Page desservie lorsque le chemin est vide xxx/ */}
-                <Route path="metiers" element={<PermanentDrawerLeft/>} />
+            <Route path="/" element={<MainLayout/>}>
+                <Route index element={<Navigate to={"/metiers"}/>} />
+                <Route path="metiers" element={<GenerationPage/>} />
                 <Route path="test" element={<h1>Test page</h1>} />
                 <Route path="*" element={<h1>An error occured</h1>} />
             </Route>

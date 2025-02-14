@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {DtoJob} from "../Dtos/DtoJob.ts";
+import {DtoJob} from "../dtos/DtoJob.ts";
 
 const BASE_URL = 'http://localhost:5217/api';
 
@@ -11,16 +11,6 @@ const jobService = {
             return response.data;
         } catch (error) {
             console.error('Erreur lors de l’appel à l’API:', error);
-            throw error;
-        }
-    },
-
-    updateMetiers: async (job: DtoJob): Promise<void> => {
-        try {
-            await axios.put(`${BASE_URL}/aimodel/${job.id}`, job);
-            console.log("Metiers updated successfully");
-        } catch (error) {
-            console.error(error);
             throw error;
         }
     }

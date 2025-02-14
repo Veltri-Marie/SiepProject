@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Quill from "quill";
 import "quill/dist/quill.snow.css";
-import { Box, Typography } from "@mui/material";
-import { DtoJob } from "../../Dtos/DtoJob.ts";
+import { DtoJob } from "../../dtos/DtoJob.ts";
+import { StyledContainer, StyledBox, StyledTypography, StyledEditorContainer } from "./JobEditor.styles";
 
 interface JobEditorProps {
     jobData: DtoJob | undefined;
@@ -74,47 +74,17 @@ const JobEditor: React.FC<JobEditorProps> = ({ jobData, setJobData }) => {
     }, [jobData, setJobData]);
 
     return (
-        <Box sx={{ width: "100%", display: "flex", flexDirection: "column", gap: 3, mt: 2 }}>
-            <Box
-                sx={{
-                    width: "100%",
-                    maxWidth: "1200px",
-                    height: "400px",
-                    backgroundColor: "#fff",
-                    border: "1px solid #ccc",
-                    borderRadius: "8px",
-                    padding: 2,
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                    alignSelf: "center",
-                    display: "flex",
-                    flexDirection: "column",
-                    overflow: "hidden",
-                }}
-            >
-                <Typography variant="h6" sx={{ marginBottom: 1 }}>Description</Typography>
-                <div ref={descriptionRef} style={{ flex: 1, maxHeight: "300px", overflow: "auto" }} />
-            </Box>
+        <StyledContainer>
+            <StyledBox>
+                <StyledTypography variant="h6">Description</StyledTypography>
+                <StyledEditorContainer ref={descriptionRef} />
+            </StyledBox>
 
-            <Box
-                sx={{
-                    width: "100%",
-                    maxWidth: "1200px",
-                    height: "400px",
-                    backgroundColor: "#fff",
-                    border: "1px solid #ccc",
-                    borderRadius: "8px",
-                    padding: 2,
-                    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-                    alignSelf: "center",
-                    display: "flex",
-                    flexDirection: "column",
-                    overflow: "hidden",
-                }}
-            >
-                <Typography variant="h6" sx={{ marginBottom: 1 }}>Savoir-Faire</Typography>
-                <div ref={knowHowsRef} style={{ flex: 1, maxHeight: "300px", overflow: "auto" }} />
-            </Box>
-        </Box>
+            <StyledBox>
+                <StyledTypography variant="h6">Savoir-Faire</StyledTypography>
+                <StyledEditorContainer ref={knowHowsRef} />
+            </StyledBox>
+        </StyledContainer>
     );
 };
 
