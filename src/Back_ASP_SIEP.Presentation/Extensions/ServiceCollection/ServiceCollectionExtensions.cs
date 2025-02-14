@@ -27,6 +27,7 @@ namespace Extensions.ServiceCollection
 
             services.AddControllers();
             services.AddLogging();
+            services.AddSignalR();
 
             // Registers the repository and use case for job sheets
             services.AddScoped<IJobSheetRepository, JobSheetRepository>();

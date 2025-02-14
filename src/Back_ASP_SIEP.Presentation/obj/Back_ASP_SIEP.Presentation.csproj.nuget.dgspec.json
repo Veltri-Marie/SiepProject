@@ -246,13 +246,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Fleck": {
+            "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
-              "version": "[1.2.0, )"
-            },
-            "Microsoft.AspNetCore.WebSockets": {
-              "target": "Package",
-              "version": "[2.3.0, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
