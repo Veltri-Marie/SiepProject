@@ -6,6 +6,7 @@ using Microsoft.SemanticKernel;
 using Repositories.Job;
 using Repositories.Json;
 using UseCases.Job;
+using Services.BingSearch;
 
 namespace Extensions.ServiceCollection
 {
@@ -52,6 +53,8 @@ namespace Extensions.ServiceCollection
 
             // Registers the file helper as a singleton
             services.AddSingleton<IFileHelper>(new FileHelper());
+
+            services.AddHttpClient<BingSearchService>();
         }
     }
 }

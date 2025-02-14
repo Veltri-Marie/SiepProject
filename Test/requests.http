@@ -6,3 +6,6 @@ Content-Type: application/json
 {
     "text": "J'ai un problème de plomberie"
 }
+
+GET http://localhost:5217/api/bing/search?query=casque
+###
