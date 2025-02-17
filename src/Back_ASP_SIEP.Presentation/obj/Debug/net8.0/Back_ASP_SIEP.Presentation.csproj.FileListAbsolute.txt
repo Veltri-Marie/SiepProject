@@ -340,3 +340,15 @@ C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.
 C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\Back_ASP_SIEP.Presentation.pdb
 C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\Back_ASP_SIEP.Presentation.genruntimeconfig.cache
 C:\Users\NathanVanQuaquebeke\Documents\BackEndAsp\SiepProject\src\Back_ASP_SIEP.Presentation\obj\Debug\net8.0\ref\Back_ASP_SIEP.Presentation.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Common.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.Extensions.Features.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\_Code\SiepProject-dev\src\Back_ASP_SIEP.Presentation\bin\Debug\net8.0\System.Net.ServerSentEvents.dll

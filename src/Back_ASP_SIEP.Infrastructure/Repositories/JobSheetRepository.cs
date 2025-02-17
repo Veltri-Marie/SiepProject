@@ -1,14 +1,17 @@
 using Interfaces.Repositories;
 using InterfaceS.Helpers.File;
 using Microsoft.SemanticKernel;
+using Microsoft.SemanticKernel.ChatCompletion;
 
 namespace Repositories.Job
 {
     /// <summary> Repository for retrieving and formatting job sheet data. </summary>
-    public class JobSheetRepository(Kernel kernel, IFileHelper fileHelper) : IJobSheetRepository
+    public class JobSheetRepository(Kernel kernel, IFileHelper fileHelper, IChatCompletionService chatCompletionService) : IJobSheetRepository
     {
         private readonly Kernel _kernel = kernel;
         private readonly IFileHelper _fileHelper = fileHelper;
+        private readonly IChatCompletionService _chatCompletionService = chatCompletionService;
+
 
         /// <summary> Retrieves a formatted job sheet asynchronously based on the specified job name. </summary>
         /// <returns> A formatted job sheet as a string containing at least a json structure. </returns>
@@ -39,7 +42,10 @@ namespace Repositories.Job
                 {jobName}
 
                 Recherche les informations nécessaires pour ce métier et remplis la fiche en utilisant des informations précises et synthétiques.";
-
+                await foreach (var message in _chatCompletionService.GetStreamingChatMessageContentsAsync(prompt))
+                {
+                    Console.Write("Streaming message: " + message);
+                }
                 FunctionResult result = await _kernel.InvokePromptAsync(prompt);
                 Console.WriteLine("THE PROMPT RESULT IS: " + result);
                 return result.ToString();

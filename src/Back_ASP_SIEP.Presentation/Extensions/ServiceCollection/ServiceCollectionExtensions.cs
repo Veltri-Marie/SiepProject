@@ -19,9 +19,10 @@ namespace Extensions.ServiceCollection
             {
                 options.AddPolicy("Dev", builder =>
                 {
-                    builder.AllowAnyOrigin()
+                    builder.WithOrigins("http://localhost:5173") // ✅ Autoriser le frontend
                            .AllowAnyMethod()
-                           .AllowAnyHeader();
+                           .AllowAnyHeader()
+                           .AllowCredentials(); // ✅ Indispensable pour SignalR
                 });
             });
 
@@ -40,7 +41,7 @@ namespace Extensions.ServiceCollection
             // Registers a collection of AI plugins (currently empty)
             services.AddSingleton<KernelPluginCollection>((serviceProvider) =>
                 [
-                    // KernelPluginFactory.CreateFromObject(serviceProvider.GetRequiredService<TestPlugin>())
+                // KernelPluginFactory.CreateFromObject(serviceProvider.GetRequiredService<TestPlugin>())
                 ]
             );
 
@@ -54,5 +55,6 @@ namespace Extensions.ServiceCollection
             // Registers the file helper as a singleton
             services.AddSingleton<IFileHelper>(new FileHelper());
         }
+
     }
 }
